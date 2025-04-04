@@ -1,13 +1,23 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, inject, OnInit } from '@angular/core';
+import { ShoppingCardComponent } from './shopping-card/shopping-card.component';
+import { ProductService } from './product.service';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [ShoppingCardComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'product-modal';
+  productService = inject(ProductService);
+
+  ngOnInit(): void {
+    this.productService.products.subscribe({
+      next: (res) => {
+        console.log(res);
+      },
+    });
+  }
 }
