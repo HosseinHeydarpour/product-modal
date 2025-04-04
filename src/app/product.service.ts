@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
+import { Product } from './product.model';
 
 @Injectable({
   providedIn: 'root',
@@ -9,6 +10,12 @@ export class ProductService {
   constructor() {}
 
   get products() {
-    return this.httpClient.get('https://fakestoreapi.com/products');
+    return this.httpClient.get<Product[]>('https://fakestoreapi.com/products');
+  }
+
+  getProduct(id: number) {
+    return this.httpClient.get<Product>(
+      `https://fakestoreapi.com/products/${id}`
+    );
   }
 }
