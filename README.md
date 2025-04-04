@@ -1,27 +1,101 @@
-# ProductModal
+# ProductModal 🚀
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.4.
+This is a mini project built using **Angular** and **Tailwind CSS**. I integrated [FakeStoreAPI](https://fakestoreapi.com/) to practice using Angular's `HttpClient`, and added a few fallback states. It’s not perfect — the main focus was on **learning and mastering Tailwind CSS**, not Angular. The design follows a **mobile-first approach** 📱.
 
-## Development server
+**Live Demo**: [https://product-modal-six.vercel.app/](https://product-modal-six.vercel.app/) 🔗
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+---
 
-## Code scaffolding
+## Development Server 🛠️
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run:
 
-## Build
+```bash
+ng serve
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Navigate to `http://localhost:4200/`. The app will automatically reload when you change any source files.
 
-## Running unit tests
+---
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Build 🏗️
 
-## Running end-to-end tests
+Run:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```bash
+ng build
+```
 
-## Further help
+The build artifacts will be stored in the `dist/` directory.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
+
+## Technologies Used 🧰
+
+- [Angular 18](https://angular.io/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [FakeStoreAPI](https://fakestoreapi.com/)
+- TypeScript
+- HTML & SCSS
+
+---
+
+## Features ✨
+
+- Mobile-first responsive design
+- Product modal view
+- Tailwind CSS utility-first styling
+- Data fetched from FakeStoreAPI
+- Basic fallback/error UI states
+
+---
+
+## What I Learned 📚
+
+- Setting up Tailwind CSS with Angular
+- Making HTTP requests using Angular's `HttpClient`
+- Handling async data with fallback UI
+- Building responsive components with a mobile-first mindset
+
+---
+
+## Improvements for the Future 🔧
+
+- Better state management (possibly with NgRx or signals)
+- More robust error handling
+- Polished UX/UI interactions
+- Testing (unit + e2e)
+- Lazy loading and route-level splitting
+
+---
+
+## Getting Started 🚀
+
+1. Clone the repo:
+
+```bash
+git clone https://github.com/your-username/product-modal.git
+cd product-modal
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Run the development server:
+
+```bash
+ng serve
+```
+
+---
+
+## License 📄
+
+This project is for educational purposes and does not have a specific license yet.
+
+---
+
+Thanks for checking it out! Made with love & curiosity. ❤️
