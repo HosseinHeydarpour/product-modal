@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 @Component({
   selector: 'button[appPrimaryBtn]',
@@ -10,4 +10,6 @@ import { Component } from '@angular/core';
     class: 'btn-primary',
   },
 })
-export class PrimaryBtnComponent {}
+export class PrimaryBtnComponent {
+  label = input.required<string>();
+}
